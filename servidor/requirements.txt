@@ -1,0 +1,6 @@
+fastapi>=0.115
+uvicorn>=0.30
+grpcio>=1.60
+grpcio-tools>=1.60
+# usado apenas por verificar_contrato.py (autoteste antes do sorteio)
+httpx>=0.28

@@ -1,0 +1,20 @@
+[2026-10-06T14:13:09] protocol=REST client=C01 server=S01 requestId=C01-R1-028571150bdb test=R1 operation=GET_PRODUCT target=http://127.0.0.1:8081 status=200 durationMs=294 result=PASS
+[2026-10-06T14:13:09] protocol=REST client=C01 server=S01 requestId=C01-R2-ebab30a06418 test=R2 operation=GET_PRODUCT target=http://127.0.0.1:8081 status=404 durationMs=308 result=PASS
+[2026-10-06T14:13:09] protocol=REST client=C01 server=S01 requestId=C01-R3-772451d1fc4a test=R3 operation=POST_QUOTE target=http://127.0.0.1:8081 status=200 durationMs=277 result=PASS
+[2026-10-06T14:13:09] protocol=REST client=C01 server=S01 requestId=C01-R4-cf626565505d test=R4 operation=POST_QUOTE target=http://127.0.0.1:8081 status=200 durationMs=12 result=PASS
+[2026-10-06T14:13:09] protocol=REST client=C01 server=S01 requestId=C01-R5-2296d40f87e5 test=R5 operation=POST_QUOTE target=http://127.0.0.1:8081 status=422 durationMs=35 result=PASS
+[2026-10-06T14:13:12] protocol=REST client=C01 server=S02 requestId=C01-R1-d7c45c606d52 test=R1 operation=GET_PRODUCT target=http://127.0.0.1:8082 status=200 durationMs=32 result=PASS
+[2026-10-06T14:13:12] protocol=REST client=C01 server=S02 requestId=C01-R2-45ceb4331c42 test=R2 operation=GET_PRODUCT target=http://127.0.0.1:8082 status=404 durationMs=41 result=PASS
+[2026-10-06T14:13:12] protocol=REST client=C01 server=S02 requestId=C01-R3-30a8bd7e9d60 test=R3 operation=POST_QUOTE target=http://127.0.0.1:8082 status=200 durationMs=133 result=PASS
+[2026-10-06T14:13:12] protocol=REST client=C01 server=S02 requestId=C01-R4-462e0360dee6 test=R4 operation=POST_QUOTE target=http://127.0.0.1:8082 status=200 durationMs=42 result=PASS
+[2026-10-06T14:13:12] protocol=REST client=C01 server=S02 requestId=C01-R5-1d6d4d82e5a4 test=R5 operation=POST_QUOTE target=http://127.0.0.1:8082 status=422 durationMs=44 result=PASS
+[2026-10-06T14:13:12] protocol=GRPC client=C01 server=S01 requestId=C01-G1-e567dd344b39 test=G1 operation=Health target=127.0.0.1:50061 status=OK durationMs=50 result=PASS obs="HealthRequest não possui request_id: o identificador é só do log do Cliente"
+[2026-10-06T14:13:12] protocol=GRPC client=C01 server=S01 requestId=C01-G2-0a0878dfe5c2 test=G2 operation=CalculateShipping target=127.0.0.1:50061 status=OK durationMs=33 priceCents=1800 estimatedDays=2 result=PASS
+[2026-10-06T14:13:12] protocol=GRPC client=C01 server=S01 requestId=C01-G3-a298bfc4be61 test=G3 operation=CalculateShipping target=127.0.0.1:50061 status=OK durationMs=67 priceCents=4600 estimatedDays=2 result=PASS
+[2026-10-06T14:13:12] protocol=GRPC client=C01 server=S01 requestId=C01-G4-dff57583b2f5 test=G4 operation=CalculateShipping target=127.0.0.1:50061 status=OK durationMs=112 priceCents=3400 estimatedDays=7 result=PASS
+[2026-10-06T14:13:12] protocol=GRPC client=C01 server=S01 requestId=C01-G5-90e9e97255cb test=G5 operation=CalculateShipping target=127.0.0.1:50061 status=INVALID_ARGUMENT durationMs=200 details=INVALID_WEIGHT result=PASS
+[2026-10-06T14:13:13] protocol=GRPC client=C01 server=S02 requestId=C01-G1-f872b4199fd3 test=G1 operation=Health target=127.0.0.1:50062 status=OK durationMs=104 result=PASS obs="HealthRequest não possui request_id: o identificador é só do log do Cliente"
+[2026-10-06T14:13:13] protocol=GRPC client=C01 server=S02 requestId=C01-G2-3bae01d53f01 test=G2 operation=CalculateShipping target=127.0.0.1:50062 status=OK durationMs=64 priceCents=1800 estimatedDays=2 result=PASS
+[2026-10-06T14:13:13] protocol=GRPC client=C01 server=S02 requestId=C01-G3-abb90da17bb5 test=G3 operation=CalculateShipping target=127.0.0.1:50062 status=OK durationMs=46 priceCents=4600 estimatedDays=2 result=PASS
+[2026-10-06T14:13:13] protocol=GRPC client=C01 server=S02 requestId=C01-G4-6d3766c8b216 test=G4 operation=CalculateShipping target=127.0.0.1:50062 status=OK durationMs=63 priceCents=3400 estimatedDays=7 result=PASS
+[2026-10-06T14:13:13] protocol=GRPC client=C01 server=S02 requestId=C01-G5-ba08f7200347 test=G5 operation=CalculateShipping target=127.0.0.1:50062 status=INVALID_ARGUMENT durationMs=53 details=INVALID_WEIGHT result=PASS
