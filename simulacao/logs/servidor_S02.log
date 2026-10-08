@@ -1,44 +1,44 @@
-[2026-10-06T14:13:03] protocol=REST server=S02 client=C99 requestId=verif-9fb9deca operation=GET_PRODUCT input=KB-100 status=200 result=OK durationMs=12
-[2026-10-06T14:13:03] protocol=REST server=S02 client=C99 requestId=verif-1de48dcc operation=GET_PRODUCT input=MS-200 status=200 result=OK durationMs=6
-[2026-10-06T14:13:03] protocol=REST server=S02 client=C99 requestId=verif-17845cc8 operation=GET_PRODUCT input=HD-300 status=200 result=OK durationMs=6
-[2026-10-06T14:13:03] protocol=REST server=S02 client=C99 requestId=verif-3c83d232 operation=GET_PRODUCT input=MN-400 status=200 result=OK durationMs=2
-[2026-10-06T14:13:03] protocol=REST server=S02 client=C99 requestId=verif-11a69c1b operation=GET_PRODUCT input=XX-999 status=404 result=ERROR code=PRODUCT_NOT_FOUND durationMs=8
-[2026-10-06T14:13:03] protocol=REST server=S02 client=? requestId=verif-sem-equipe operation=GET_PRODUCT input=- status=400 result=ERROR code=MISSING_REQUIRED_HEADER durationMs=0
-[2026-10-06T14:13:03] protocol=REST server=S02 client=C99 requestId=- operation=GET_PRODUCT input=- status=400 result=ERROR code=MISSING_REQUIRED_HEADER durationMs=0
-[2026-10-06T14:13:03] protocol=REST server=S02 client=C99 requestId=verif-8afddd5b operation=POST_QUOTE input=2xKB-100,1xMS-200 status=200 result=OK durationMs=2
-[2026-10-06T14:13:03] protocol=REST server=S02 client=C99 requestId=verif-ce11880f operation=POST_QUOTE input=1xMN-400 status=200 result=OK durationMs=4
-[2026-10-06T14:13:03] protocol=REST server=S02 client=C99 requestId=verif-9dde34d9 operation=POST_QUOTE input=1xHD-300 status=200 result=OK durationMs=13
-[2026-10-06T14:13:03] protocol=REST server=S02 client=C99 requestId=verif-71790fbe operation=POST_QUOTE input=1xHD-300 status=200 result=OK durationMs=2
-[2026-10-06T14:13:03] protocol=REST server=S02 client=C99 requestId=verif-cbdeeb5d operation=POST_QUOTE input=corpo-invalido status=400 result=ERROR code=INVALID_REQUEST durationMs=7
-[2026-10-06T14:13:03] protocol=REST server=S02 client=C99 requestId=verif-5253448c operation=POST_QUOTE input=corpo-invalido status=400 result=ERROR code=INVALID_REQUEST durationMs=2
-[2026-10-06T14:13:03] protocol=REST server=S02 client=C99 requestId=verif-fb5c0f29 operation=POST_QUOTE input=corpo-invalido status=400 result=ERROR code=INVALID_REQUEST durationMs=3
-[2026-10-06T14:13:03] protocol=REST server=S02 client=C99 requestId=verif-b9273cd1 operation=POST_QUOTE input=1xXX-999 status=422 result=ERROR code=INVALID_PRODUCT durationMs=2
-[2026-10-06T14:13:04] protocol=REST server=S02 client=C99 requestId=verif-f3411f88 operation=POST_QUOTE input=0xKB-100 status=422 result=ERROR code=INVALID_QUANTITY_OR_ITEMS durationMs=5
-[2026-10-06T14:13:04] protocol=REST server=S02 client=C99 requestId=verif-d2883f9a operation=POST_QUOTE input=11xKB-100 status=422 result=ERROR code=INVALID_QUANTITY_OR_ITEMS durationMs=2
-[2026-10-06T14:13:04] protocol=REST server=S02 client=C99 requestId=verif-a29b66ef operation=POST_QUOTE input=1xKB-100,2xKB-100 status=422 result=ERROR code=INVALID_QUANTITY_OR_ITEMS durationMs=2
-[2026-10-06T14:13:04] protocol=REST server=S02 client=C99 requestId=verif-1c705690 operation=POST_QUOTE input=sem-itens status=422 result=ERROR code=INVALID_QUANTITY_OR_ITEMS durationMs=2
-[2026-10-06T14:13:04] protocol=REST server=S02 client=C99 requestId=verif-f37d5cc3 operation=POST_QUOTE input=1xKB-100,1xKB-101,1xKB-102,1xKB-103,1xKB-104,1xKB-105 status=422 result=ERROR code=INVALID_QUANTITY_OR_ITEMS durationMs=2
-[2026-10-06T14:13:04] protocol=GRPC server=S02 client=C99 requestId=- operation=Health status=OK result=OK durationMs=0
-[2026-10-06T14:13:04] protocol=GRPC server=S02 client=? requestId=- operation=Health status=INVALID_ARGUMENT result=ERROR detail=MISSING_CLIENT_TEAM durationMs=0
-[2026-10-06T14:13:04] protocol=GRPC server=S02 client=C99 requestId=verif-grpc operation=CalculateShipping weight=1500 zone=LOCAL mode=STANDARD status=OK priceCents=1800 estimatedDays=2 result=OK durationMs=0
-[2026-10-06T14:13:04] protocol=GRPC server=S02 client=C99 requestId=verif-grpc operation=CalculateShipping weight=2500 zone=REGIONAL mode=EXPRESS status=OK priceCents=4600 estimatedDays=2 result=OK durationMs=0
-[2026-10-06T14:13:04] protocol=GRPC server=S02 client=C99 requestId=verif-grpc operation=CalculateShipping weight=1000 zone=NATIONAL mode=STANDARD status=OK priceCents=3400 estimatedDays=7 result=OK durationMs=0
-[2026-10-06T14:13:04] protocol=GRPC server=S02 client=C99 requestId=verif-grpc operation=CalculateShipping weight=1 zone=LOCAL mode=EXPRESS status=OK priceCents=2200 estimatedDays=1 result=OK durationMs=0
-[2026-10-06T14:13:04] protocol=GRPC server=S02 client=C99 requestId=verif-grpc operation=CalculateShipping weight=1001 zone=REGIONAL mode=STANDARD status=OK priceCents=2600 estimatedDays=4 result=OK durationMs=0
-[2026-10-06T14:13:04] protocol=GRPC server=S02 client=C99 requestId=verif-grpc operation=CalculateShipping weight=30000 zone=NATIONAL mode=EXPRESS status=OK priceCents=22500 estimatedDays=3 result=OK durationMs=0
-[2026-10-06T14:13:04] protocol=GRPC server=S02 client=? requestId=verif-grpc operation=CalculateShipping weight=1000 zone=LOCAL mode=STANDARD status=INVALID_ARGUMENT result=ERROR detail=MISSING_CLIENT_TEAM durationMs=0
-[2026-10-06T14:13:04] protocol=GRPC server=S02 client=C99 requestId=- operation=CalculateShipping weight=1000 zone=LOCAL mode=STANDARD status=INVALID_ARGUMENT result=ERROR detail=MISSING_REQUEST_ID durationMs=0
-[2026-10-06T14:13:04] protocol=GRPC server=S02 client=C99 requestId=verif-grpc operation=CalculateShipping weight=0 zone=LOCAL mode=STANDARD status=INVALID_ARGUMENT result=ERROR detail=INVALID_WEIGHT durationMs=0
-[2026-10-06T14:13:04] protocol=GRPC server=S02 client=C99 requestId=verif-grpc operation=CalculateShipping weight=30001 zone=LOCAL mode=STANDARD status=INVALID_ARGUMENT result=ERROR detail=INVALID_WEIGHT durationMs=0
-[2026-10-06T14:13:04] protocol=GRPC server=S02 client=C99 requestId=verif-grpc operation=CalculateShipping weight=1000 zone=SHIPPING_ZONE_UNSPECIFIED mode=STANDARD status=INVALID_ARGUMENT result=ERROR detail=INVALID_ZONE durationMs=0
-[2026-10-06T14:13:04] protocol=GRPC server=S02 client=C99 requestId=verif-grpc operation=CalculateShipping weight=1000 zone=LOCAL mode=SHIPPING_MODE_UNSPECIFIED status=INVALID_ARGUMENT result=ERROR detail=INVALID_MODE durationMs=0
-[2026-10-06T14:13:12] protocol=REST server=S02 client=C01 requestId=C01-R1-d7c45c606d52 operation=GET_PRODUCT input=KB-100 status=200 result=OK durationMs=9
-[2026-10-06T14:13:12] protocol=REST server=S02 client=C01 requestId=C01-R2-45ceb4331c42 operation=GET_PRODUCT input=XX-999 status=404 result=ERROR code=PRODUCT_NOT_FOUND durationMs=2
-[2026-10-06T14:13:12] protocol=REST server=S02 client=C01 requestId=C01-R3-30a8bd7e9d60 operation=POST_QUOTE input=2xKB-100,1xMS-200 status=200 result=OK durationMs=1
-[2026-10-06T14:13:12] protocol=REST server=S02 client=C01 requestId=C01-R4-462e0360dee6 operation=POST_QUOTE input=1xMN-400 status=200 result=OK durationMs=2
-[2026-10-06T14:13:12] protocol=REST server=S02 client=C01 requestId=C01-R5-1d6d4d82e5a4 operation=POST_QUOTE input=1xXX-999 status=422 result=ERROR code=INVALID_PRODUCT durationMs=5
-[2026-10-06T14:13:13] protocol=GRPC server=S02 client=C01 requestId=- operation=Health status=OK result=OK durationMs=0
-[2026-10-06T14:13:13] protocol=GRPC server=S02 client=C01 requestId=C01-G2-3bae01d53f01 operation=CalculateShipping weight=1500 zone=LOCAL mode=STANDARD status=OK priceCents=1800 estimatedDays=2 result=OK durationMs=0
-[2026-10-06T14:13:13] protocol=GRPC server=S02 client=C01 requestId=C01-G3-abb90da17bb5 operation=CalculateShipping weight=2500 zone=REGIONAL mode=EXPRESS status=OK priceCents=4600 estimatedDays=2 result=OK durationMs=0
-[2026-10-06T14:13:13] protocol=GRPC server=S02 client=C01 requestId=C01-G4-6d3766c8b216 operation=CalculateShipping weight=1000 zone=NATIONAL mode=STANDARD status=OK priceCents=3400 estimatedDays=7 result=OK durationMs=0
-[2026-10-06T14:13:13] protocol=GRPC server=S02 client=C01 requestId=C01-G5-ba08f7200347 operation=CalculateShipping weight=0 zone=LOCAL mode=STANDARD status=INVALID_ARGUMENT result=ERROR detail=INVALID_WEIGHT durationMs=0
+[2026-10-07T22:26:33] protocol=REST server=S02 client=C99 requestId=verif-ebbb1815 operation=GET_PRODUCT input=KB-100 status=200 result=OK durationMs=3
+[2026-10-07T22:26:33] protocol=REST server=S02 client=C99 requestId=verif-29762b3a operation=GET_PRODUCT input=MS-200 status=200 result=OK durationMs=1
+[2026-10-07T22:26:33] protocol=REST server=S02 client=C99 requestId=verif-49360d74 operation=GET_PRODUCT input=HD-300 status=200 result=OK durationMs=1
+[2026-10-07T22:26:33] protocol=REST server=S02 client=C99 requestId=verif-7199d2d3 operation=GET_PRODUCT input=MN-400 status=200 result=OK durationMs=1
+[2026-10-07T22:26:33] protocol=REST server=S02 client=C99 requestId=verif-c2cbb3dd operation=GET_PRODUCT input=XX-999 status=404 result=ERROR code=PRODUCT_NOT_FOUND durationMs=1
+[2026-10-07T22:26:33] protocol=REST server=S02 client=? requestId=verif-sem-equipe operation=GET_PRODUCT input=- status=400 result=ERROR code=MISSING_REQUIRED_HEADER durationMs=0
+[2026-10-07T22:26:33] protocol=REST server=S02 client=C99 requestId=- operation=GET_PRODUCT input=- status=400 result=ERROR code=MISSING_REQUIRED_HEADER durationMs=0
+[2026-10-07T22:26:33] protocol=REST server=S02 client=C99 requestId=verif-f88dbb91 operation=POST_QUOTE input=2xKB-100,1xMS-200 status=200 result=OK durationMs=2
+[2026-10-07T22:26:33] protocol=REST server=S02 client=C99 requestId=verif-2db2d477 operation=POST_QUOTE input=1xMN-400 status=200 result=OK durationMs=1
+[2026-10-07T22:26:33] protocol=REST server=S02 client=C99 requestId=verif-b033d946 operation=POST_QUOTE input=1xHD-300 status=200 result=OK durationMs=1
+[2026-10-07T22:26:33] protocol=REST server=S02 client=C99 requestId=verif-d8e414dd operation=POST_QUOTE input=1xHD-300 status=200 result=OK durationMs=1
+[2026-10-07T22:26:33] protocol=REST server=S02 client=C99 requestId=verif-9c015dfb operation=POST_QUOTE input=corpo-invalido status=400 result=ERROR code=INVALID_REQUEST durationMs=1
+[2026-10-07T22:26:33] protocol=REST server=S02 client=C99 requestId=verif-0fd58071 operation=POST_QUOTE input=corpo-invalido status=400 result=ERROR code=INVALID_REQUEST durationMs=1
+[2026-10-07T22:26:33] protocol=REST server=S02 client=C99 requestId=verif-e2c2748a operation=POST_QUOTE input=corpo-invalido status=400 result=ERROR code=INVALID_REQUEST durationMs=1
+[2026-10-07T22:26:33] protocol=REST server=S02 client=C99 requestId=verif-f879a7e3 operation=POST_QUOTE input=1xXX-999 status=422 result=ERROR code=INVALID_PRODUCT durationMs=1
+[2026-10-07T22:26:33] protocol=REST server=S02 client=C99 requestId=verif-b4fa389b operation=POST_QUOTE input=0xKB-100 status=422 result=ERROR code=INVALID_QUANTITY_OR_ITEMS durationMs=1
+[2026-10-07T22:26:33] protocol=REST server=S02 client=C99 requestId=verif-bb2f215e operation=POST_QUOTE input=11xKB-100 status=422 result=ERROR code=INVALID_QUANTITY_OR_ITEMS durationMs=1
+[2026-10-07T22:26:33] protocol=REST server=S02 client=C99 requestId=verif-70e91faa operation=POST_QUOTE input=1xKB-100,2xKB-100 status=422 result=ERROR code=INVALID_QUANTITY_OR_ITEMS durationMs=1
+[2026-10-07T22:26:33] protocol=REST server=S02 client=C99 requestId=verif-7c4abd05 operation=POST_QUOTE input=sem-itens status=422 result=ERROR code=INVALID_QUANTITY_OR_ITEMS durationMs=1
+[2026-10-07T22:26:33] protocol=REST server=S02 client=C99 requestId=verif-4c97f608 operation=POST_QUOTE input=1xKB-100,1xKB-101,1xKB-102,1xKB-103,1xKB-104,1xKB-105 status=422 result=ERROR code=INVALID_QUANTITY_OR_ITEMS durationMs=1
+[2026-10-07T22:26:33] protocol=GRPC server=S02 client=C99 requestId=- operation=Health status=OK result=OK durationMs=0
+[2026-10-07T22:26:33] protocol=GRPC server=S02 client=? requestId=- operation=Health status=INVALID_ARGUMENT result=ERROR detail=MISSING_CLIENT_TEAM durationMs=0
+[2026-10-07T22:26:33] protocol=GRPC server=S02 client=C99 requestId=verif-grpc operation=CalculateShipping weight=1500 zone=LOCAL mode=STANDARD status=OK priceCents=1800 estimatedDays=2 result=OK durationMs=0
+[2026-10-07T22:26:33] protocol=GRPC server=S02 client=C99 requestId=verif-grpc operation=CalculateShipping weight=2500 zone=REGIONAL mode=EXPRESS status=OK priceCents=4600 estimatedDays=2 result=OK durationMs=0
+[2026-10-07T22:26:33] protocol=GRPC server=S02 client=C99 requestId=verif-grpc operation=CalculateShipping weight=1000 zone=NATIONAL mode=STANDARD status=OK priceCents=3400 estimatedDays=7 result=OK durationMs=0
+[2026-10-07T22:26:33] protocol=GRPC server=S02 client=C99 requestId=verif-grpc operation=CalculateShipping weight=1 zone=LOCAL mode=EXPRESS status=OK priceCents=2200 estimatedDays=1 result=OK durationMs=0
+[2026-10-07T22:26:33] protocol=GRPC server=S02 client=C99 requestId=verif-grpc operation=CalculateShipping weight=1001 zone=REGIONAL mode=STANDARD status=OK priceCents=2600 estimatedDays=4 result=OK durationMs=0
+[2026-10-07T22:26:33] protocol=GRPC server=S02 client=C99 requestId=verif-grpc operation=CalculateShipping weight=30000 zone=NATIONAL mode=EXPRESS status=OK priceCents=22500 estimatedDays=3 result=OK durationMs=0
+[2026-10-07T22:26:33] protocol=GRPC server=S02 client=? requestId=verif-grpc operation=CalculateShipping weight=1000 zone=LOCAL mode=STANDARD status=INVALID_ARGUMENT result=ERROR detail=MISSING_CLIENT_TEAM durationMs=0
+[2026-10-07T22:26:33] protocol=GRPC server=S02 client=C99 requestId=- operation=CalculateShipping weight=1000 zone=LOCAL mode=STANDARD status=INVALID_ARGUMENT result=ERROR detail=MISSING_REQUEST_ID durationMs=0
+[2026-10-07T22:26:33] protocol=GRPC server=S02 client=C99 requestId=verif-grpc operation=CalculateShipping weight=0 zone=LOCAL mode=STANDARD status=INVALID_ARGUMENT result=ERROR detail=INVALID_WEIGHT durationMs=0
+[2026-10-07T22:26:33] protocol=GRPC server=S02 client=C99 requestId=verif-grpc operation=CalculateShipping weight=30001 zone=LOCAL mode=STANDARD status=INVALID_ARGUMENT result=ERROR detail=INVALID_WEIGHT durationMs=0
+[2026-10-07T22:26:33] protocol=GRPC server=S02 client=C99 requestId=verif-grpc operation=CalculateShipping weight=1000 zone=SHIPPING_ZONE_UNSPECIFIED mode=STANDARD status=INVALID_ARGUMENT result=ERROR detail=INVALID_ZONE durationMs=0
+[2026-10-07T22:26:33] protocol=GRPC server=S02 client=C99 requestId=verif-grpc operation=CalculateShipping weight=1000 zone=LOCAL mode=SHIPPING_MODE_UNSPECIFIED status=INVALID_ARGUMENT result=ERROR detail=INVALID_MODE durationMs=0
+[2026-10-07T22:26:34] protocol=REST server=S02 client=C01 requestId=C01-R1-f30117c3e6b9 operation=GET_PRODUCT input=KB-100 status=200 result=OK durationMs=1
+[2026-10-07T22:26:34] protocol=REST server=S02 client=C01 requestId=C01-R2-39e2119589c1 operation=GET_PRODUCT input=XX-999 status=404 result=ERROR code=PRODUCT_NOT_FOUND durationMs=2
+[2026-10-07T22:26:34] protocol=REST server=S02 client=C01 requestId=C01-R3-24af8e559448 operation=POST_QUOTE input=2xKB-100,1xMS-200 status=200 result=OK durationMs=8
+[2026-10-07T22:26:34] protocol=REST server=S02 client=C01 requestId=C01-R4-88e37e9fd6b8 operation=POST_QUOTE input=1xMN-400 status=200 result=OK durationMs=1
+[2026-10-07T22:26:34] protocol=REST server=S02 client=C01 requestId=C01-R5-6a785056263a operation=POST_QUOTE input=1xXX-999 status=422 result=ERROR code=INVALID_PRODUCT durationMs=1
+[2026-10-07T22:26:34] protocol=GRPC server=S02 client=C01 requestId=- operation=Health status=OK result=OK durationMs=0
+[2026-10-07T22:26:34] protocol=GRPC server=S02 client=C01 requestId=C01-G2-dd85d184f241 operation=CalculateShipping weight=1500 zone=LOCAL mode=STANDARD status=OK priceCents=1800 estimatedDays=2 result=OK durationMs=0
+[2026-10-07T22:26:34] protocol=GRPC server=S02 client=C01 requestId=C01-G3-3552feef5355 operation=CalculateShipping weight=2500 zone=REGIONAL mode=EXPRESS status=OK priceCents=4600 estimatedDays=2 result=OK durationMs=0
+[2026-10-07T22:26:34] protocol=GRPC server=S02 client=C01 requestId=C01-G4-0223c14c8521 operation=CalculateShipping weight=1000 zone=NATIONAL mode=STANDARD status=OK priceCents=3400 estimatedDays=7 result=OK durationMs=0
+[2026-10-07T22:26:34] protocol=GRPC server=S02 client=C01 requestId=C01-G5-788e067da011 operation=CalculateShipping weight=0 zone=LOCAL mode=STANDARD status=INVALID_ARGUMENT result=ERROR detail=INVALID_WEIGHT durationMs=0

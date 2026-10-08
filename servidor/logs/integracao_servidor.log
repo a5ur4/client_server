@@ -1,0 +1,30 @@
+[2026-10-07T22:25:33] protocol=REST server=S01 client=C01 requestId=C01-R1-cbe4db4a9ec8 operation=GET_PRODUCT input=KB-100 status=200 result=OK durationMs=8
+[2026-10-07T22:25:33] protocol=REST server=S01 client=C01 requestId=C01-R2-294aac815d6a operation=GET_PRODUCT input=XX-999 status=404 result=ERROR code=PRODUCT_NOT_FOUND durationMs=2
+[2026-10-07T22:25:33] protocol=REST server=S01 client=C01 requestId=C01-R3-a097a40a1e56 operation=POST_QUOTE input=2xKB-100,1xMS-200 status=200 result=OK durationMs=7
+[2026-10-07T22:25:33] protocol=REST server=S01 client=C01 requestId=C01-R4-7fe0d10e6e3f operation=POST_QUOTE input=1xMN-400 status=200 result=OK durationMs=1
+[2026-10-07T22:25:33] protocol=REST server=S01 client=C01 requestId=C01-R5-d13994c8c430 operation=POST_QUOTE input=1xXX-999 status=422 result=ERROR code=INVALID_PRODUCT durationMs=1
+[2026-10-07T22:25:39] protocol=GRPC server=S01 client=C01 requestId=- operation=Health status=OK result=OK durationMs=0
+[2026-10-07T22:25:39] protocol=GRPC server=S01 client=C01 requestId=C01-G2-a895f5e7dddc operation=CalculateShipping weight=1500 zone=LOCAL mode=STANDARD status=OK priceCents=1800 estimatedDays=2 result=OK durationMs=0
+[2026-10-07T22:25:39] protocol=GRPC server=S01 client=C01 requestId=C01-G3-945a4dd90f30 operation=CalculateShipping weight=2500 zone=REGIONAL mode=EXPRESS status=OK priceCents=4600 estimatedDays=2 result=OK durationMs=0
+[2026-10-07T22:25:39] protocol=GRPC server=S01 client=C01 requestId=C01-G4-ada17b5e08e8 operation=CalculateShipping weight=1000 zone=NATIONAL mode=STANDARD status=OK priceCents=3400 estimatedDays=7 result=OK durationMs=0
+[2026-10-07T22:25:39] protocol=GRPC server=S01 client=C01 requestId=C01-G5-7e44a9d197e1 operation=CalculateShipping weight=0 zone=LOCAL mode=STANDARD status=INVALID_ARGUMENT result=ERROR detail=INVALID_WEIGHT durationMs=0
+[2026-10-07T22:25:57] protocol=REST server=S01 client=C01 requestId=C01-R1-ed0400d8e0ee operation=GET_PRODUCT input=KB-100 status=200 result=OK durationMs=1
+[2026-10-07T22:25:57] protocol=REST server=S01 client=C01 requestId=C01-R2-0431bc52bb07 operation=GET_PRODUCT input=XX-999 status=404 result=ERROR code=PRODUCT_NOT_FOUND durationMs=1
+[2026-10-07T22:25:57] protocol=REST server=S01 client=C01 requestId=C01-R3-70baa0afd262 operation=POST_QUOTE input=2xKB-100,1xMS-200 status=200 result=OK durationMs=1
+[2026-10-07T22:25:57] protocol=REST server=S01 client=C01 requestId=C01-R4-f3a0e7271058 operation=POST_QUOTE input=1xMN-400 status=200 result=OK durationMs=1
+[2026-10-07T22:25:57] protocol=REST server=S01 client=C01 requestId=C01-R5-94893cf84aa3 operation=POST_QUOTE input=1xXX-999 status=422 result=ERROR code=INVALID_PRODUCT durationMs=1
+[2026-10-07T22:25:57] protocol=GRPC server=S01 client=C01 requestId=- operation=Health status=OK result=OK durationMs=0
+[2026-10-07T22:25:57] protocol=GRPC server=S01 client=C01 requestId=C01-G2-24fdbba57bb2 operation=CalculateShipping weight=1500 zone=LOCAL mode=STANDARD status=OK priceCents=1800 estimatedDays=2 result=OK durationMs=0
+[2026-10-07T22:25:57] protocol=GRPC server=S01 client=C01 requestId=C01-G3-e7a2410c4ba5 operation=CalculateShipping weight=2500 zone=REGIONAL mode=EXPRESS status=OK priceCents=4600 estimatedDays=2 result=OK durationMs=0
+[2026-10-07T22:25:57] protocol=GRPC server=S01 client=C01 requestId=C01-G4-7e3be85479cd operation=CalculateShipping weight=1000 zone=NATIONAL mode=STANDARD status=OK priceCents=3400 estimatedDays=7 result=OK durationMs=0
+[2026-10-07T22:25:57] protocol=GRPC server=S01 client=C01 requestId=C01-G5-0742cc33d8fb operation=CalculateShipping weight=0 zone=LOCAL mode=STANDARD status=INVALID_ARGUMENT result=ERROR detail=INVALID_WEIGHT durationMs=0
+[2026-10-07T22:26:00] protocol=REST server=S01 client=C01 requestId=C01-R1-b9b99cb2739b operation=GET_PRODUCT input=KB-100 status=200 result=OK durationMs=1
+[2026-10-07T22:26:00] protocol=REST server=S01 client=C01 requestId=C01-R2-90e0a5e49205 operation=GET_PRODUCT input=XX-999 status=404 result=ERROR code=PRODUCT_NOT_FOUND durationMs=1
+[2026-10-07T22:26:00] protocol=REST server=S01 client=C01 requestId=C01-R3-b94c2c819c74 operation=POST_QUOTE input=2xKB-100,1xMS-200 status=200 result=OK durationMs=1
+[2026-10-07T22:26:00] protocol=REST server=S01 client=C01 requestId=C01-R4-1c193921b081 operation=POST_QUOTE input=1xMN-400 status=200 result=OK durationMs=1
+[2026-10-07T22:26:00] protocol=REST server=S01 client=C01 requestId=C01-R5-de5f1eaa98fc operation=POST_QUOTE input=1xXX-999 status=422 result=ERROR code=INVALID_PRODUCT durationMs=1
+[2026-10-07T22:26:00] protocol=GRPC server=S01 client=C01 requestId=- operation=Health status=OK result=OK durationMs=0
+[2026-10-07T22:26:00] protocol=GRPC server=S01 client=C01 requestId=C01-G2-8f1e59c4ee23 operation=CalculateShipping weight=1500 zone=LOCAL mode=STANDARD status=OK priceCents=1800 estimatedDays=2 result=OK durationMs=0
+[2026-10-07T22:26:00] protocol=GRPC server=S01 client=C01 requestId=C01-G3-388c17df2a9a operation=CalculateShipping weight=2500 zone=REGIONAL mode=EXPRESS status=OK priceCents=4600 estimatedDays=2 result=OK durationMs=0
+[2026-10-07T22:26:00] protocol=GRPC server=S01 client=C01 requestId=C01-G4-657d11ada441 operation=CalculateShipping weight=1000 zone=NATIONAL mode=STANDARD status=OK priceCents=3400 estimatedDays=7 result=OK durationMs=0
+[2026-10-07T22:26:00] protocol=GRPC server=S01 client=C01 requestId=C01-G5-7c5a8212f0b7 operation=CalculateShipping weight=0 zone=LOCAL mode=STANDARD status=INVALID_ARGUMENT result=ERROR detail=INVALID_WEIGHT durationMs=0
